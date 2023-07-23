@@ -1,0 +1,75 @@
+unit Api.Classes;
+
+interface
+
+type
+
+  TResults = class
+    private
+    public
+      constructor create;
+      destructor destroy; override;
+  end;
+
+  TInfo = class
+    private
+    public
+      constructor create;
+      destructor destroy; override;
+  end;
+
+  TArrResults = Array of TResults;
+
+  TRespApi = class
+    private
+      Fresults: TArrResults;
+      Finfo: TInfo;
+    public
+      constructor create;
+      destructor Destroy; override;
+      property results: TArrResults read Fresults write Fresults;
+      property info: TInfo read Finfo write Finfo;
+  end;
+
+implementation
+
+{ TRespApi }
+
+constructor TRespApi.create;
+begin
+
+end;
+
+destructor TRespApi.Destroy;
+begin
+
+  inherited;
+end;
+
+{ TResults }
+
+constructor TResults.create;
+begin
+
+end;
+
+destructor TResults.destroy;
+begin
+
+  inherited;
+end;
+
+{ TInfo }
+
+constructor TInfo.create;
+begin
+
+end;
+
+destructor TInfo.destroy;
+begin
+
+  inherited;
+end;
+
+end.
